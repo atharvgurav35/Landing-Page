@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+</head>
+<style>
+    body{
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/651/331/small_2x/graphic-design-illustration-of-a-stack-of-encyclopedia-books-background-with-blank-area-free-vector.jpg);
+        
+    background-size: cover;
+    }
+    .navbar{
+      width: 1200px;
+      height : 75px;
+      margin : auto;
+    }
+    .icon{
+      width: 200px;
+      float : left;
+      height : 70px;
+    }
+    .logo{
+      color: rgb(255, 140, 0);
+      font-size: 35px;
+      font-family: Arial;
+      padding-left: 20px;
+      float:left ;
+      padding-top:13px;
+    }
+    .menu{
+      width:400px;
+      float: left;
+      height: 70px;
+    }
+    ul{
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ul li{
+      list-style: none;
+      margin-left: 62px;
+      margin-top: 27px;
+      font-size: 14px;
+    }
+    ul li a{
+      text-decoration: none;
+      color:rgb(0, 0, 0);
+      font-family: arial;
+      font-weight: bold;
+      transition: 0.2s ease-in-out;
+    }
+   
+    ul li a:hover{
+      color:orange;
+    }
+
+    .featured_boks{
+    width: 95%;
+    height: 1%;   
+}
+.featured_boks h1{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.featured_boks{
+    height: 100px;
+    padding-left: 50px;
+    
+}
+.featured_boks .featured_book_box{
+    width: 99%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.featured_boks .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 440px;
+    text-align: center;
+    padding: 5px;
+    border: 2px double #000000;
+    margin: 10px;
+    transition: 0.4s ease-in;
+    border-radius: 10px;
+
+}
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 15px 15px 15px  rgb(0, 0, 0);
+    background-color: #9abbea;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    height: 175px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: #000000;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories{
+    color: rgb(0, 0, 0);
+    margin-top: 8px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    text-decoration: none;
+    color: #000;
+    border-radius: 7px;
+    transition: box-shadow 0.2s;
+}
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn:hover{
+    box-shadow: 0 0 5px  rgb(0, 0, 0);
+
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 10px;
+    
+}
+</style>
+
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo">Web-Page</h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="service.html">SERVICE</a></li>
+            <li><a href="book.html">BOOKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+   
+    <div class="featured_boks">
+        <h1>Featured Books</h1>
+        <div class="featured_book_box">
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41R9Qctt+bL._SX258_BO1,204,203,200_.jpg">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>HTML and CSS: Design and Build Websites</h2>
+                    <p class="writer"> Jon Duckett</p>
+                    <div class="categories">HTML:5 and CSS3</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/HTML and CSS Design and Build Websites.pdf" class="f_btn" download="HTML and CSS Design and Build Websites">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://upolujebooka.pl/_data/offer/007/68974-java_generics_and_collections.jpg">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Java Generics and Collections</h2>
+                    <p class="writer"> Maurice Naftalin and Philip Wadler</p>
+                    <div class="categories">Java Language</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/Java-Generics-and-Collections.pdf" class="f_btn" download="java generics and colloction">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://th.bing.com/th/id/OIP.QQl2lIUjBnkddroWgw5-twHaKA?rs=1&pid=ImgDetMain">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>The C Programming Language</h2>
+                    <p class="writer">Brian W. Kernighan and Dennis Ritchie</p>
+                    <div class="categories">C Language</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/The.C.Programming.Language.2Nd.Ed Prentice.Hall.Brian.W.Kernighan.and.Dennis.M.Ritchie..pdf" class="f_btn">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://th.bing.com/th/id/OIP.jF6MMHyzJ5qE26-VlfK79QHaK0?w=1424&h=2079&rs=1&pid=ImgDetMain">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Effective Java</h2>
+                    <p class="writer">Joshua Bloch</p>
+                    <div class="categories">Java Language</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/Effective Java.pdf" class="f_btn" download="Effective java ">Download</a>
+                </div>               
+            </div>
+            
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://m.media-amazon.com/images/I/41bOkXnNBjL._SY445_SX342_.jpg">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Clean Code</h2>
+                    <p class="writer">Robert C Martin</p>
+                    <div class="categories"> A Handbook of Agile Software Craftsmanship</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/Clean Code_ A Handbook of Agile Software Craftsmanship - Robert C. Martin.pdf" class="f_btn" download="Clean Code by Robert C Martin">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://www.informit.com/ShowCover.aspx?isbn=0135957052">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>The Pragmatic Programmer</h2>
+                    <p class="writer"> Andrew Hunt and David Thomas</p>
+                    <div class="categories">Programming material</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/The Pragmatic Programmer.pdf" class="f_btn" download="The Pragmatic Programmer">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://images.thenile.io/r1000/9780735619678.jpg">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Complete Code</h2>
+                    <p class="writer">Steve McConnell</p>
+                    <div class="categories">A Practical Handbook of Software Construction</div>
+                    <p class="book_price"></p>
+                    <a href="PDF/Steve McConnell - Code Complete (2nd edition).pdf" class="f_btn" download="Complete Code by Steve McConnell">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://www.elsolucionario.me/wp-content/archivos/2013/10/introduction-to-algorithms-thomas-h-cormen-3rd-edition.jpg">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Introduction to Algorithms</h2>
+                    <p class="writer">Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</p>
+                    <div class="categories">Programming material</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/Introduction to Algorithms.pdf" class="f_btn" download="Introduction to Algorithms">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://dokumen.pub/img/programming-pearls-2nd-edition-0201657880.jpg">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Programming Pearls</h2>
+                    <p class="writer">Jon Bentley</p>
+                    <div class="categories">Programming Material</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/Programming Pearls.pdf" class="f_btn" download="Programming Pearls">Download</a>
+                </div>               
+            </div>
+            <div class="featured_book_card">
+                <div class="featurde_book_img">
+                    <img src="https://th.bing.com/th/id/OIP.Flb_D12FcxyJO3PJw7Lv-QAAAA?rs=1&pid=ImgDetMain">
+                </div>
+                <div class="featurde_book_tag">
+                    <h2>Head First Design Patterns</h2>
+                    <p class="writer">Eric Freeman, Elisabeth Robson, Bert Bates, and Kathy Sierra</p>
+                    <div class="categories">Programming Material</div>
+                    <p class="book_price">FREE</p>
+                    <a href="PDF/head-first-design-patterns_compress.pdf" class="f_btn" download="Head First Design Patterns">Download</a>
+                </div>               
+            </div>
+            
+            
+            
+            
+        </div>
+        </div>
+        
+</body>
+<script>
+ function confirmDownload() {
+    return confirm("Are you sure you want to download this file?");
+  }
+
+  window.onload = function() {
+    var books = document.getElementsByClassName('f_btn');
+    for (var i = 0; i < books.length; i++) {
+      books[i].addEventListener('click', function(event) {
+        if (!confirmDownload()) {
+          event.preventDefault(); // Prevent the default action (download) if user cancels
+        }
+      });
+    }
+  };
+
+
+</script>
+
+</script>
+
+</html>
